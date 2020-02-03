@@ -12,7 +12,6 @@ Smart and simple php class for compress (minify) *.css, *.js and *.html files or
 ### PHP (work with files)
 ```php
 <?php
-header("Content-Type: text/plain");
 require "jetPacker.php";
 $files = array("/css/style.css", "/css/custom.css", "/css/settings.css");
 $packer = new jetPacker();
@@ -23,7 +22,6 @@ echo $out;
 ### PHP (work with data)
 ```php
 <?php
-header("Content-Type: text/plain");
 require "jetPacker.php";
 $data = file_get_contents("index.html");
 $packer = new jetPacker();
