@@ -22,7 +22,7 @@ class jetPacker {
 		//по умолчанию файл не сжат
 		$this->minified = false;
 		//сжатие по умолчанию
-		$this->level = 1;
+		$this->level = 2;
 		//разрешенные форматы
 		$this->allow_mimes = ["js", "css"];
 	}
