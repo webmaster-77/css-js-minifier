@@ -148,7 +148,7 @@ class jetPacker {
 						$content = $this->compress($content);
 					}
 					//если сжатия нет то выводим как есть с комментарием о имени файла
-					$data .= ($this->level == 0 ? "/*File: ".$file."*/" : "").$content."\n";
+					$data .= ($this->level == 0 ? "/*File: ".$file."*/" : "").$content;
 				}
 				else{
 					//с таким типом данных мы не работаем
