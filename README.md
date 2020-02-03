@@ -5,3 +5,4 @@ Smart and simple php class for compress (minify) *.css, *.js and *.html files or
 - 3 level compress (0 - no compress, 1 - without whitespace, 2 - with whitespace)
 - only remove comments from *.min.js or *.min.css files
 - show execution time
+- work as smarty modificator
