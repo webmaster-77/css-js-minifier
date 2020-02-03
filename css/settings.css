@@ -1,0 +1,48 @@
+.tooltip .arrow{
+	display:none !important;
+}
+.tooltip.show{
+	opacity:1;
+}
+a.pseudo{
+	border-bottom:1px dotted #000;
+}
+a.pseudo:hover, a.pseudo.activeColor{
+	border-bottom:1px dotted #ff5e14;
+}
+.wp-post-image{
+	border-radius: 50px;
+}
+
+#fixed_contact_button {
+    position: fixed;
+    font-size: 2em;
+    left: 0;
+    bottom: 30px;
+    width: 53px;
+    height: 53px;
+    padding: 10px;
+    background-color: #ff5e14;
+    cursor: pointer;
+    z-index: 10;
+}
+
+#fixed_contact_button.clicked {
+	z-index: 1041
+}
+
+.fixed-contact-icon {
+    color: #fff;
+    width: 53px;
+    height: 53px;
+    position: absolute;
+    overflow: hidden;
+}
+
+.fixed-contact-icon .fa-comment-dots {
+	animation: rotation 1.5s linear infinite
+}
+
+.fixed-contact-icon {
+	font-size: 28px;
+}
