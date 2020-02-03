@@ -6,6 +6,7 @@ Smart and simple php class for compress (minify) *.css, *.js and *.html files or
 - only remove comments from *.min.js or *.min.css files
 - show execution time
 - work as smarty modificator
+- autodetect mime type and set own rules
 
 ## Usage
 
