@@ -1,0 +1,46 @@
+li.comment{
+    border-top: 1px solid #f1f1f1;
+}
+
+.btn_likes{
+    font-size: 1rem;
+    line-height: 1;
+    padding: 10px 15px 10px 0px;
+    font-weight: 400;
+    color: #000;
+	background-color:#fff;
+    position: relative;
+	border:0;
+}
+.btn_likes:hover, .btn_likes.active {
+	color:#ff5e14;
+}
+
+@keyframes rotation {
+    0%,100%,50% {
+        transform: rotate(0)
+    }
+
+    25% {
+        transform: rotate(30deg)
+    }
+
+    75% {
+        transform: rotate(-30deg)
+    }
+}
+
+@media (max-width: 767px){
+	.blog-meta ul li {
+		display:block;
+	}
+	.blog-meta ul li:before {
+		content: none;
+	}
+	.pagination_waper li.page-item .page-link{
+	    font-size: 14px;
+	    line-height: 20px;
+	    width: 35px;
+	    height: 35px;
+	}
+}
