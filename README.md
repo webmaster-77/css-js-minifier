@@ -20,5 +20,23 @@ $packer->level = 2;     //compress level
 $out = $packer->add_files();
 echo $out;
 ```
+ 
+### SMARTY
+#### Connect as modifier
+```php
+require "jetPacker.php";
+$smarty = new Smarty;
+$smarty->registerPlugin('modifier', 'packer', 'jetPacker');
 
-Example as SMARTY:    
+function jetPacker($files){
+  $packer = new jetPacker();
+  $packer->files = $files;
+  $packer->level = 2;
+  $out = $packer->add_files();
+  return $out;
+}
+```
+#### Call as modifier
+```smarty
+{["/assets/css/style.css","/assets/css/custom.css","/assets/css/settings.css"]|packer}
+```
