@@ -25,6 +25,7 @@ echo $out;
 require "jetPacker.php";
 $data = file_get_contents("index.html");
 $packer = new jetPacker();
+$packer->type = "html";
 $out = $packer->compress($data);
 echo $out;
 ```
