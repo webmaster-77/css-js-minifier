@@ -1,0 +1,46 @@
+*{
+	word-wrap: normal !important;
+	word-break: keep-all !important;
+}
+
+html{
+	-ms-overflow-style: none;  /* IE 10+ */
+	scrollbar-width: thin; /* Firefox */
+}
+
+p{
+	padding-top:10px;
+}
+
+a.activeColor.underline{
+	text-decoration:underline !important;
+}
+
+a.activeColor.underline:hover{
+	text-decoration:none !important;
+}
+
+.form-control{
+	border-radius:0px;
+}
+
+.brand-logo img{
+	height:50px;
+	margin-top:7px;
+}
+
+a[data-fancybox].mr-3:last-child{
+  margin-right:0px !important;
+}
+
+.py-5{
+  padding-bottom:3rem !important; padding-top:3rem !important;
+}
+
+.pt-5{
+  padding-top:3rem !important;
+}
+
+.pb-5{
+  padding-bottom:3rem !important;
+}
