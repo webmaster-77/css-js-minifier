@@ -36,7 +36,11 @@ function jetPacker($files){
   return $out;
 }
 ```
-#### Call as modifier
+#### In the template, use packer to compress files.
 ```smarty
+...
+<style>
 {["/assets/css/style.css","/assets/css/custom.css","/assets/css/settings.css"]|packer}
+</style>
+...
 ```
