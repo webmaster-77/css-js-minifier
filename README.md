@@ -16,8 +16,7 @@ require "jetPacker.php";
 $files = array("/css/style.css", "/css/custom.css", "/css/settings.css");
 $packer = new jetPacker();
 $packer->files = $files;
-$packer->level = 2;     //compress level
-$out = $packer->add_files();
+$out = $packer->init();
 echo $out;
 ```
  
@@ -31,8 +30,7 @@ $smarty->registerPlugin('modifier', 'packer', 'jetPacker');
 function jetPacker($files){
   $packer = new jetPacker();
   $packer->files = $files;
-  $packer->level = 2;
-  $out = $packer->add_files();
+  $out = $packer->init();
   return $out;
 }
 ```
