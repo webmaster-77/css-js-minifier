@@ -117,7 +117,7 @@ class jetPacker {
 		return trim($buffer);
 	}
 
-	public function add_files(){
+	public function init(){
 		//время вызова метода
 		$time_start = microtime(true);
 		//по умолчанию данных нет
